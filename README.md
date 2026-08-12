@@ -22,35 +22,35 @@ IPGeo adalah CLI berbasis Go untuk melakukan lookup informasi IP/domain.
 ```bash
 gofmt -w *.go
 go build -o ipgeo .
-
+```
 ## Usage
-
+```bash
 ./ipgeo 8.8.8.8
-
+```
 ## Domain:
-
+```
 ./ipgeo example.com
-
+```
 ## Json:
-
+```bash
 ./ipgeo --json 8.8.8.8
-
+```
 ## history:
-
+```bash
 ./ipgeo --history
-
+```
 ## Clear Cache:
-
+```bash
 ./ipgeo --clear-cache
-
+```
 ## Version:
-
+```bash
 ./ipgeo --version
-
+```
 ## Help:
-
+```bash
 ./ipgeo --help
-
+```
 ## Disclaimer
 
 Informasi geolocation berbasis IP bersifat perkiraan dan bukan lokasi fisik pasti seseorang.
@@ -90,11 +90,11 @@ func TestResolveInvalidTarget(t *testing.T) {
         }
 }
 EOF
-
+```
 ## jalankan:
-
+```bash
 go test ./...
-
+```
 ## kalau muncul:
 
 PASS
@@ -103,15 +103,15 @@ ok      ipgeo
 ## berarti mantap joss
 
 ## build final
-
+```bash
 gofmt -w *.go
 go test ./...
 go build -o ipgeo .
 cp ipgeo $PREFIX/bin/ipgeo
-
+```
 ## cek:
-
+```bash
 ipgeo --version
 ipgeo --help
-
+```
 ## hanya untuk pembelajaran
